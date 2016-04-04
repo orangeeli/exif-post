@@ -1,0 +1,39 @@
+{
+  "name": "exif-example",
+  "version": "1.0.0",
+  "description": "exif handling when selecting a photo to upload",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://eliseu_martinho@bitbucket.org/eliseu_martinho/exif-post.git"
+  },
+  "keywords": [
+    "exif",
+    "photo",
+    "upload"
+  ],
+  "dependencies": {
+    "exif-rotate": "0.0.3",
+    "exif-js": "2.1.1"
+  },
+  "browser": {
+    "rotate": "exif-rotate",
+    "exifjs": "exif-js"
+  },
+  "devDependencies": {
+    "browserify": "latest",
+    "watchify": "latest",
+    "grunt": "~0.4.0",
+    "grunt-browserify": "latest",
+    "grunt-contrib-watch": "latest"
+  },
+  "scripts": {
+    "build-js": "browserify js/main.js > js/findem.js",
+    "watch-js": "watchify js/main.js -o js/findem.js"
+  },
+  "author": "Eliseu Martinho",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/eliseu_martinho/exif-post#readme"
+}

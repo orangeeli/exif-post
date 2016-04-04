@@ -43,13 +43,13 @@ html, body {
   flex-direction: column;
 }
 
-header.title {
+.title {
   width: 100%;
   justify-content: center;
   display: flex;
 }
 
-section.img-holder {
+.img-holder {
   width: 100%;
   justify-content: center;
   display: flex;
@@ -57,7 +57,21 @@ section.img-holder {
   padding: 72px 0 70px;
 }
 
-img {
+.img-inner-holder {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+.the-image {
   width: 309px;
   height: 413px;
+}
+
+.img-form {
+  flex-direction: column;
+}
+
+.img-img {
+  width: 238px;
 }
