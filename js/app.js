@@ -1,10 +1,16 @@
 (function(exif, rotate){
 
+  "use strict";
+
   var photoInput,
-    imageTemp;
+    imageTemp,
+    imgOriginalHolder,
+    imgRotatedHolder;
 
   photoInput = window.document.querySelector("input[name='photo_input']");
   imageTemp = window.document.querySelector(".img-inner-holder");
+  imgOriginalHolder = window.document.querySelector(".img-original");
+  imgRotatedHolder = window.document.querySelector(".img-rotated");
 
   photoInput.addEventListener("change", function(event){
 
@@ -28,9 +34,9 @@
           i.src = uri;
           i.setAttribute("class", "the-image");
           img.setAttribute("class", "the-image");
-          imageTemp.appendChild(i);
+          imgRotatedHolder.appendChild(i);
         }
-        imageTemp.appendChild(img);
+        imgOriginalHolder.appendChild(img);
 
     });
 

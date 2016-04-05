@@ -5,6 +5,8 @@ html, body {
   -webkit-font-smoothing: antialiased;
   color: #333;
   font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 .menu {
@@ -57,10 +59,28 @@ html, body {
   padding: 72px 0 70px;
 }
 
+.img-result-holder{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.img-original {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
 .img-inner-holder {
   display: flex;
   margin: auto;
   flex-direction: column;
+}
+
+.img-label {
+  text-align: center;
+  padding: 30px 0 10px;
 }
 
 .the-image {
