@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Oh meine Exif!</title>
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/rotation.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="menu">
+      <div class="menu-entry">
+        <a href="/index.html" class="menu-link">
+          <span class="menu-text">Beispiel</span>
+        </a>
+      </div>
+      <div class="menu-entry menu-entry-selected">
+        <a href="/rotateJS.html" class="menu-link">
+          <span class="menu-text">Hochladen</span>
+        </a>
+      </div>
+      <div class="menu-entry">
+        <a href="/rotateCSS.html" class="menu-link">
+          <span class="menu-text">Rotate CSS</span>
+        </a>
+      </div>
+      <div class="menu-entry">
+        <a href="/showImage.html" class="menu-link">
+          <span class="menu-text">Show Image</span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header class="title">
+        <h1>Oh meine Exif!</h1>
+      </header>
+      <!--section class="img-holder img-form">
+        <div class="img-inner-holder">
+          <input type="file" name="photo_input" />
+        </div>
+      </section-->
+      <section class="img-holder">
+        <div class="img-inner-holder">
+          <input type="file" name="photo_input" />
+          <div class="img-img">Die Bilder wird hier shauen.</div>
+        </div>
+      </section>
+      <section class="img-result-holder">
+        <div class="img-original">
+          <div class="img-label"><span>Original</span></div>
+          <div class="img-original-holder the-image"></div>
+        </div>
+        <div class="img-rotated">
+          <div class="img-label"><span>Rotated</span></div>
+          <div class="img-rotated-holder the-image"></div>
+        </div>
+      </section>
+    </div>
+    <!-- should listen to the event on document ready to execute script -->
+    <!-- or I sould delay the script execution for the next event loop (end of the page rendering) -->
+    <script src="js/app-bundle-2.js"></script>
+  </body>
+</html>

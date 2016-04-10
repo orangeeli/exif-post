@@ -10,12 +10,12 @@
   <body>
 
     <nav class="menu">
-      <div class="menu-entry menu-entry-selected">
+      <div class="menu-entry">
         <a href="/index.html" class="menu-link">
           <span class="menu-text">Beispiel</span>
         </a>
       </div>
-      <div class="menu-entry">
+      <div class="menu-entry menu-entry-selected">
         <a href="/rotateJS.html" class="menu-link">
           <span class="menu-text">Hochladen</span>
         </a>
@@ -36,11 +36,30 @@
       <header class="title">
         <h1>Oh meine Exif!</h1>
       </header>
+      <!--section class="img-holder img-form">
+        <div class="img-inner-holder">
+          <input type="file" name="photo_input" />
+        </div>
+      </section-->
       <section class="img-holder">
-        <img class="the-image" src="img/f3.jpg" alt="This is an 'F'." />
+        <div class="img-inner-holder">
+          <input type="file" name="photo_input" />
+          <div class="img-img">Die Bilder wird hier shauen.</div>
+        </div>
+      </section>
+      <section class="img-result-holder">
+        <div class="img-original">
+          <div class="img-label"><span>Original</span></div>
+          <div class="img-original-holder the-image"></div>
+        </div>
+        <div class="img-rotated">
+          <div class="img-label"><span>Rotated</span></div>
+          <div class="img-rotated-holder the-image"></div>
+        </div>
       </section>
     </div>
-
+    <!-- should listen to the event on document ready to execute script -->
+    <!-- or I sould delay the script execution for the next event loop (end of the page rendering) -->
     <script src="js/app-bundle.js"></script>
   </body>
 </html>
