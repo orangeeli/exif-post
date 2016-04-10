@@ -9,14 +9,14 @@
   transform: scaleY(-1);
 }
 .flipX-rotate90 {
-  transform: scaleX(-1) rotate(90);
+  transform: scaleX(-1) rotate(90deg);
 }
 .rotate90 {
-  transform: rotate(90);
+  transform: rotate(90deg);
 }
 .flipX-rotate-90 {
-  transform: scaleX(-1) rotate(-90);
+  transform: scaleX(-1) rotate(-90deg);
 }
 .rotate-90 {
-  transform: rotate(-90);
+  transform: rotate(-90deg);
 }

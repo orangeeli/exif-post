@@ -73,7 +73,6 @@
       }
       //imgOriginalHolder.appendChild(originalImage);
       imgOriginalHolder.setAttribute("style", "background: url("+originalImage.src+") no-repeat; background-size:contain;");
-      imgOriginalHolder.className+=selectedClassName;
     });
 
   }, false);
