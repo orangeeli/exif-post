@@ -30,8 +30,10 @@
     "grunt-contrib-watch": "latest"
   },
   "scripts": {
-    "build-js": "browserify js/main.js > js/findem.js",
-    "watch-js": "watchify js/main.js -o js/findem.js"
+    "build-js": "browserify js/app.js -o js/app-bundle.js",
+    "build-js2": "browserify js/app2.js -o js/app-bundle-2.js",
+    "build-js3": "browserify js/app3.js -o js/app-bundle-3.js",
+    "watch-js": "watchify js/app.js -o js/app-bundle.js"
   },
   "author": "Eliseu Martinho",
   "license": "MIT",
