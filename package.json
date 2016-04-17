@@ -27,7 +27,9 @@
     "watchify": "latest",
     "grunt": "~0.4.0",
     "grunt-browserify": "latest",
-    "grunt-contrib-watch": "latest"
+    "grunt-contrib-watch": "latest",
+    "gulp": "3.7.0",
+    "vinyl-source-stream": "latest"
   },
   "scripts": {
     "build-js": "browserify js/app.js -o js/app-bundle.js",
