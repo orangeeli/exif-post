@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "exif handling when selecting a photo to upload",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-js": "browserify js/app.js -o js/app-bundle.js",
+    "build-js2": "browserify js/app2.js -o js/app-bundle-2.js",
+    "build-js3": "browserify js/app3.js -o js/app-bundle-3.js",
+    "watch-js": "watchify js/app.js -o js/app-bundle.js"
   },
   "repository": {
     "type": "git",
@@ -24,18 +27,15 @@
   },
   "devDependencies": {
     "browserify": "latest",
-    "watchify": "latest",
     "grunt": "~0.4.0",
     "grunt-browserify": "latest",
     "grunt-contrib-watch": "latest",
     "gulp": "3.7.0",
-    "vinyl-source-stream": "latest"
-  },
-  "scripts": {
-    "build-js": "browserify js/app.js -o js/app-bundle.js",
-    "build-js2": "browserify js/app2.js -o js/app-bundle-2.js",
-    "build-js3": "browserify js/app3.js -o js/app-bundle-3.js",
-    "watch-js": "watchify js/app.js -o js/app-bundle.js"
+    "gulp-uglify": "^1.5.3",
+    "pump": "^1.0.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "latest",
+    "watchify": "latest"
   },
   "author": "Eliseu Martinho",
   "license": "MIT",
