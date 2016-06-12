@@ -9,5 +9,3 @@ I've written a [post](https://medium.com/@Orangeeli/oh-my-exif-777335e26213#.whf
 
 ### Rotate CSS ###
 [Here](http://orangeeli.github.io/exif-post/rotateCSS.html) you can try the upload form on a mobile phone and check the photo rotation with CSS.
-
-### Show Image ###
